@@ -1,12 +1,12 @@
 body {
 font: "Georgia";
-  font-size: 14pt;
+  font-size: 13.5pt;
   color: #232623;
   background: #d4e5b8;
 }
 
 h1, h2, h3,  #footer * { 
-    color: #70709f; 
+    color: #608360; 
     clear: left;
 }
 
