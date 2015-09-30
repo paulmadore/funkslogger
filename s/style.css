@@ -1,6 +1,8 @@
 body {
-	background-color: white;
-	color: black;
+font: "Georgia";
+  font-size: 14pt;
+  color: #232623;
+  background: #d4e5b8;
 }
 
 h1, h2, h3,  #footer * { 
@@ -8,16 +10,19 @@ h1, h2, h3,  #footer * {
     clear: left;
 }
 
+a {color: #232623;}
+a:hover {color: #c0c0c0;}
+a:visited {color: #232623;}
+
+.dark a {color: #efefef;}
+.dark a:hover {color: #232623;}
+.dark a:visited {color: #efefef;}
+
 .summary {
     width: 1em !important;
 }
 
 #footer {
-	background-color: #ececef; 
-	border-color: #c0c0ff;
-	color: inherit;
-	border-top: 2px solid;
-	border-bottom: 2px solid;
 	margin-bottom: 0.2em;
 	padding-top: 0.75ex;
 	padding-bottom: 0.75ex;
@@ -35,7 +40,8 @@ tr, td {
 }
 
 .dark {
-	background-color: #efefef;
+	background-color: #7E9975;
+	color: #efefef;
 }
 
 :target {
@@ -46,33 +52,34 @@ tr, td {
 	font-size: 80%;
 }
 .special * {
-	color: gray;
+	color: #efefef;
 }
 
 #log {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #efefef;
+    border: 1px solid transparent;
 }
 
-#log tr { border-top: 1px solid #efefef; }
+#log tr { border-top: 1px solid transparent; }
 #log tr.head, #log tr.dark.new { border-top-style: none; }
-#log tr.dark { border-top: 1px solid #dfdfdf; }
+#log tr.dark { border-top: 1px solid transparent; }
 
 #log td, th {
-	font-family: Consolas, "Lucida Console", "Courier New", monospace;
+	
     padding: 0.2em 0.4em;
+	
 }
 
-#log th { border-bottom: 1px solid #C0C0C0; }
+#log th { border-bottom: 1px solid transparent; }
 
 #log .nick {
     text-align: right;
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid transparent;
 }
 
-#log .time { border-left:  1px solid #efefef; }
-#log .msg  { border-right: 1px solid #efefef; line-height: 1.3em; }
+#log .time { border-left:  1px solid transparent; }
+#log .msg  { border-right: 1px solid transparent; line-height: 1.3em; padding: 5px;}
 #log .act  { font-style: italic; }
 
 .log-index li {
@@ -106,11 +113,10 @@ br {
 
 .calendar th,td {
     height: 1.4em;
-    border: 1px solid #dfdfdf;
+    border: 1px solid transparent;
 }
 
 .calendar td {
-    font-family: Arial,Helvetica,sans-serif;
     text-align: center;
     padding-left: 4px;
     padding-right: 4px;
@@ -126,25 +132,25 @@ br {
 
 /* most important channel members. This is subjective, if you have a different
  * opinion, feel free to change */
-.nick_timtoady 	{ color: green; font-weight: bold; }
-.nick_audreyt 	{ color: red;  font-weight: bold;}
+.nick_moonpunter 	{ font-weight: bolder; }
+.nick_funkenstein_ 	{ font-weight: bolder;}
 
 /* above can now be done with ".nick_TimToady", etc. That is, "nick_$nick",
    after $nick has been sanitized. Case-sensitive. See WWW.pm. */
 
 /* all "active" bots, (svnbot6, lambdabot, specbot etc.) */
-.bots  {color: #FFA500; font-style: italic}
+.bots  {color: #efefef; font-style: italic}
 
 /* The rest gets dynamically allocated colors */
-.nick1 { color: #00AA33; }
-.nick2 { color: #AA0000; }
-.nick3 { color: #005500; }
-.nick4 { color: #FF0077; }
-.nick5 { color: blue; }
-.nick6 { color: #8B008B; }
-.nick7 { color: #50507f; }
-.nick8 { color: #00008B; }
-.nick9 { color: #222222; }
+.nick1 { color: #608360; }
+.nick2 { color: #D0E5CC; }
+.nick3 { color: #BBD341; }
+.nick4 { color: #E4EA75; }
+.nick5 { color: #93F993; }
+.nick6 { color: #DAFC92; }
+.nick7 { color: #BAD655; }
+.nick8 { color: #CCE2CC; }
+.nick9 { color: #B3D37E; }
 
 abbr { cursor: help; }
 
@@ -162,13 +168,13 @@ abbr { cursor: help; }
 	right: 1%;
 	padding: 10px;
 	background: #e0e0e0;
-	border: 2px solid #b0b0b0;
+	border: 2px solid transparent;
 }
 
 /* Semantically, a table would be more appropriate. But we want to avoid
    table layout algorithms which are a headtrip. */
 #filterbox div {
-	font-family: Consolas, "Lucida Console", "Courier New", monospace;
+	
 }
 
 /* copy stuff from main table for consistent appearance */
