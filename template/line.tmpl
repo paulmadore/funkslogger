@@ -2,4 +2,9 @@
 	<td class="time" id="i_<TMPL_VAR ID>"><a href="<TMPL_VAR BASE_URL><TMPL_VAR CHANNEL>/<TMPL_VAR DATE>#i_<TMPL_VAR ID>"><TMPL_VAR TIME></a></td>
 	<td style="color: <TMPL_VAR NICK_COLOR>" class="nick"><TMPL_VAR NICK></td>
 	<td class="msg<TMPL_IF MSG_CLASS> <TMPL_VAR MSG_CLASS></TMPL_IF> <TMPL_VAR NAME=SEARCH_FOUND DEFAULT=''>"><TMPL_VAR NAME=MESSAGE ESCAPE=0></td>
+<script>
+$('td.nick:contains("funkshelper")').css("color", "#000")
+
+ </script>
+
 </tr>

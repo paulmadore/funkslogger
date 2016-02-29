@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'libertinage';
+    src: url('libertinageweb.eot');
+    src: url('libertinageweb.eot?#iefix') format('embedded-opentype'),
+         url('libertinageweb.woff2') format('woff2'),
+         url('libertinageweb.woff') format('woff'),
+         url('libertinageweb.ttf') format('truetype'),
+         url('libertinageweb.svg#libertinage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-font: "Georgia";
+font-family: "libertinage";
   font-size: 13.5pt;
   color: #232623;
   background: #d4e5b8;
@@ -52,7 +65,7 @@ tr, td {
 	font-size: 80%;
 }
 .special * {
-	color: #efefef;
+	color: #2d2d2d;
 }
 
 #log {
@@ -76,8 +89,12 @@ tr, td {
 #log .nick {
     text-align: right;
     border-right: 1px solid transparent;
+    
 }
 
+#log td.nick {
+    color: #2d2d2d;
+}
 #log .time { border-left:  1px solid transparent; }
 #log .msg  { border-right: 1px solid transparent; line-height: 1.3em; padding: 5px;}
 #log .act  { font-style: italic; }
@@ -132,8 +149,8 @@ br {
 
 /* most important channel members. This is subjective, if you have a different
  * opinion, feel free to change */
-.nick_moonpunter 	{ font-weight: bolder; }
-.nick_funkenstein_ 	{ font-weight: bolder;}
+.nick_moonpunter 	{ font-weight: bolder; color: orange;}
+.nick_funkenstein_ 	{ font-weight: bolder; }
 
 /* above can now be done with ".nick_TimToady", etc. That is, "nick_$nick",
    after $nick has been sanitized. Case-sensitive. See WWW.pm. */
@@ -142,6 +159,8 @@ br {
 .bots  {color: #2d2d2d; font-style: italic}
 
 /* The rest gets dynamically allocated colors */
+.nick  { color: #2d2d2d; }
+.nick.funkshelper {color: #2d2d2d;}
 .nick1 { color: #608360; }
 .nick2 { color: #D0E5CC; }
 .nick3 { color: #BBD341; }
