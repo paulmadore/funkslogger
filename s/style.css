@@ -139,7 +139,7 @@ br {
    after $nick has been sanitized. Case-sensitive. See WWW.pm. */
 
 /* all "active" bots, (svnbot6, lambdabot, specbot etc.) */
-.bots  {color: #efefef; font-style: italic}
+.bots  {color: #2d2d2d; font-style: italic}
 
 /* The rest gets dynamically allocated colors */
 .nick1 { color: #608360; }
@@ -149,7 +149,7 @@ br {
 .nick5 { color: #93F993; }
 .nick6 { color: #DAFC92; }
 .nick7 { color: #BAD655; }
-.nick8 { color: #CCE2CC; }
+.nick8 { color: #2d2d2d; }
 .nick9 { color: #B3D37E; }
 
 abbr { cursor: help; }
